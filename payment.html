@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>Fashion Cart</title>
+<head>
+<script>document.createElement("ele")</script>
+<script>document.createElement("ele1")</script>
+<script>document.createElement("button1")</script>
+<style>
+
+ele
+{
+font-face: century,times new roman;
+display: block;
+color:black;
+background-color:rgba(255,255,255,1);
+opacity:0.8;
+font-size:20px;
+}
+
+ele1
+{
+font-face: century,times new roman;
+display: block;
+color:black;
+font-size:20px;
+}
+
+.button {
+  border-radius:50%;
+  background-color:#ffb6c1;
+  opacity:0.8;
+  border:none;
+  color:#800080;
+  text-align:center;
+  font-size:28px;
+  padding:20px;
+  width:200px;
+  transition:all 0.5s;
+  cursor:pointer;
+  margin:5px;
+}
+
+.button:hover span
+{
+padding-right:25px;
+}
+.button:hover span:after
+{
+opacity:0.5;
+right:0;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1 {
+  cursor:pointer;
+border-radius:20%;
+}
+
+.back
+{
+background-image:url(2.jpg);
+background-size:cover;
+}
+</style>
+</head>
+<body class="back">
+<p align="right"><a href="page1.php"><input type="button" value="Sign Out"></span></a>
+<center>
+<ele><b>CASH ON DELIVERY</b><br>
+We mainly aim at attaining customer satisfaction.<br> Kindly fill in the form so that we can deliver your order on time at the right place.
+</ele>
+</center>
+
+<br><br><br>
+<center>
+<form name="myform" action="#" method="post" style="background-color:rgba(255,255,255,1);border-radius:3px;width:290px; height:220px; opacity:0.8" >
+<ele1>
+&nbsp&nbsp&nbsp&nbsp&nbsp<label>STATE:</label>
+<select><option value="" selected="selected">TAMIL NADU</option>
+<option value="1">ANDRA PRADESH</option>
+<option value="2">TAMIL NADU</option>
+<option value="3">KERALA</option>
+<option value="4">KARNATAKA</option>
+</select>
+<br><BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label>CITY:</label>
+<input type="text" name="a">
+<br><br><label>ADDRESS:</label>
+<input type="text" name="b">
+<br><br><label>PIN CODE:</label>
+<input type="text" name="c">
+<br><br><img src="flower8.png" border="0" width="10%" height="10%" style="cursor:pointer" onclick="check()"></a>
+</ele1>
+</form>
+</center>
+<br>
+
+<script type = "text/javascript">
+function check()
+{
+var x=document.myform.c.value;
+var m=document.myform.a.value;
+var n=document.myform.b.value;
+
+if(isNaN(x))
+{
+alert("Must input numbers for pincode");
+return false;
+}
+if((m=="")||(n==""))
+{
+alert("Input is required");
+return false;
+}
+else
+{
+alert("successful");
+window.location="success.html";
+return true;
+}
+}
+</script>
+
+</body>
+</html> 
