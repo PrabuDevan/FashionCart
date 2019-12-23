@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html>
-<title>Fashion Cart</title>
-<head>
-<script>document.createElement("ele")</script>
-<style>
+  <title>Fashion Cart</title>
+  <head>
+    <script>
+      document.createElement("ele");
+    </script>
+    <style>
+      ele {
+        font: century, times new roman;
+        display: block;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        width: 290px;
+        height: 180px;
+        opacity: 0.8;
+        font-size: 20px;
+      }
 
-ele
-{
-font-face: century,times new roman;
-display: block;
-color:black;
-background-color:rgba(255,255,255,0.2);
-border-radius:3px;
-width:290px;
-height:180px; 
-opacity:0.8;
-font-size:20px;
-}
+      .back {
+        background-image: url(1jpeg);
+        background-size: cover;
+      }
+    </style>
+  </head>
 
-.back
-{
-background-image:url(1.jpeg);
-background-size:cover;
-}
+  <body class="back">
+    <a href="page1.html"><input type="button" value="Sign Out"/></a>
+    <br /><br /><br /><br />
+    <ele
+      ><b>This session expires in 6 seconds!</b><br /><br />
+      Please click on to Place My Order button to confirm your order as quickly
+      as possible<br /><br
+    /></ele>
 
-</style>
-</head>
-
-<body class="back">
-<p align="right">
-<a href="page1.html"><input type="button" value="Sign Out"></span></a>
-<center>
-<br><br><br><br>
-<ele><b>This session expires in 6 seconds!</b><br><br>
-Please click on to Place My Order button to confirm your order as quickly as possible<br><br>
-<a href="payment.html"><input type="submit" value="Place My Order"></a>
-<script>
-   setTimeout(myTimeout3, 6000) 
-function myTimeout3() {
-alert("Session expired. Please try again");
-window.location="watch.html";
-}
-</script>
-</body>
+    <a href="payment.html"><input type="submit" value="Place My Order"/></a>
+    <script>
+      setTimeout(myTimeout3, 6000);
+      function myTimeout3() {
+        alert("Session expired. Please try again");
+        window.location = "watch.html";
+      }
+    </script>
+  </body>
 </html>
