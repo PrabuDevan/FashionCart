@@ -73,21 +73,20 @@
   </center>
 
   <br><br>
-  <ele2>
-    <center>
-      <form method="post" action="page1.php" name="myform" style="background-color:rgba(255,255,255,0.5);border-radius:3px;width:290px; height:180px; opacity:0.8">
-
+  <center>
+    <ele2>
+      <form method="post" action="index.php" name="myform" style="background-color:rgba(255,255,255,0.5);border-radius:3px;width:290px; height:180px; opacity:0.8">
 
         USERNAME<input type="text" name="username" style="background-color:rgba(255,255,255,0.5);height:30px"><br>
 
         PASSWORD<input type="password" name="pword" style="background-color:rgba(255,255,255,0.5);height:30px"><br>
-  </ele2>
-  Dont have an account:<a href="signup.php">Sign-up</a><br>
+    </ele2>
+    Dont have an account:<a href="signup.php">Sign-up</a><br>
 
-  <input type="submit" name="Submit" value="Submit"></span></a>
-  <input type="button" value="Reset" onClick="this.form.reset()" />
+    <input type="submit" name="Submit" value="Submit"></span></a>
+    <input type="button" value="Reset" onClick="this.form.reset()" />
 
-  </form>
+    </form>
   </center>
   <p align="center">
     <br>
@@ -108,7 +107,7 @@
       $con = mysqli_connect("localhost", "root", "");
 
       if (!$con) {
-        die('Connection Failed' .mysqli_error($con));
+        die('Connection Failed' . mysqli_error($con));
       }
 
 
@@ -126,7 +125,7 @@
           // echo '<script>';
           // echo 'alert("You are a vaild user!");';
           // echo '</script>';
-          header("location:http://localhost/FashionCart/page2.html");
+          header("location:page2.html");
         } else {
           echo '<script>';
           echo 'alert("Sorry, You are not a vaild user!");';

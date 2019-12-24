@@ -2,7 +2,7 @@
 $con = mysqli_connect("localhost","root","","fashioncart");
 if(!$con)
 {
-    die('Connection Failed'.mysqli_error());
+    die('Connection Failed'.mysqli_error($con));
 }
 
 $uname=$_POST['username'];
@@ -25,4 +25,3 @@ else
 echo 'alert("Sorry, You are not a vaild user!");';
 echo '</script>';
 }
-?>

@@ -59,7 +59,7 @@ return true;
 <style>
 ele1
 {
-font-face: century,times new roman;
+font: century,times new roman;
 display: block;
 color:white;
 background-color:rgba(0,0,0,.5);
@@ -68,7 +68,7 @@ font-size:30px;
 
 ele2
 {
-font-face: century,times new roman;
+font: century,times new roman;
 display: block;
 color:black;
 font-size:23px;
@@ -98,7 +98,6 @@ PASSWORD<input type="password" name="pword"  style="background-color:rgba(255,25
   </ele2>
 </form>
 </center>
-<p align="center">
 <br>
  <?php
 if(isset($_POST["Submit"]) and $_POST["Submit"]=="Sign-up")
@@ -107,7 +106,7 @@ $uname=$_POST["username"];
 $pass=$_POST["pword"];
 $con=mysqli_connect("localhost","root",""); 
 if (!$con)
-die('Could not connect: ' . mysql_error());
+die('Could not connect: ' . mysqli_error($con));
 if (!mysqli_select_db($con,"fashioncart"))   
 die("Cant select database"); 
 $checkUserID = mysqli_query($con,"SELECT username from login WHERE username = '$uname'");
